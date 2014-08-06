@@ -1,0 +1,25 @@
+{
+  "debug": false,
+  "domain": null,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": "assets",
+  "preprocessorScriptOutput": "assets/javascripts",
+  "preprocessorStyleOutput": "assets/stylesheets",
+  "projectDescription": "Atlassource Framework Inteligente.",
+  "projectName": "AFI",
+  "publishedId": null,
+  "serverHostname": "localhost",
+  "serverPort": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": true,
+  "sass":
+  {
+    "cache": false
+  },
+  "convertHtmlExtension": null,
+  "convertHtmlDefault": "index"
+}
