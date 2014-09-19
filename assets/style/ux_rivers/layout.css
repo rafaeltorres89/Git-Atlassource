@@ -1,0 +1,157 @@
+/* Variables
+----------------------------------------------------------------------- */
+/* Settings
+----------------------------------------------------------------------- */
+#ABSOLUTE {
+  position: absolute;
+}
+
+#RELATIVE {
+  position: relative;
+}
+
+#FIXED, .container .sidebar {
+  position: fixed;
+}
+
+#NO-PADDING, .container .sidebar, .container .main form ul.initial {
+  padding: 0;
+}
+
+#NO-MARGIN, .container .login .btn-block, .container .main, .container .main form h4, .container .main form label.checkbox, .container .main form input.checkbox {
+  margin: 0;
+}
+
+#MARGIN_10 {
+  margin: 10%;
+}
+
+#LEFT, .container .login .btn-block, .container .main form ul.initial, .container .main form ul.initial li.textView, .container .main form label.checkbox, .container .main form input.checkbox, .container .main form .result, .container .main form .result input.alerts {
+  float: left;
+}
+
+#RIGHT, .container .login .btn-warning,
+.container .login .btn-info, .container .nav-pills, .container .main {
+  float: right;
+}
+
+#HIDE {
+  display: none;
+}
+
+#SHOW {
+  display: block;
+}
+
+/* Mixins
+----------------------------------------------------------------------- */
+/* Normalize
+----------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Forms
+----------------------------------------------------------------------- */
+.container .login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.container .login .btn-block {
+  max-width: 48%;
+}
+.container .form-control {
+  margin-bottom: 10px;
+}
+.container .checkbox {
+  font-weight: 400;
+}
+
+/* Navs
+----------------------------------------------------------------------- */
+.container .nav-pills {
+  margin-top: 6px;
+}
+
+/* Base
+----------------------------------------------------------------------- */
+.container .sidebar h1 {
+  font-size: 25px;
+}
+.container .sidebar ul.nav-sidebar li.active {
+  background: #428BCA;
+}
+.container .sidebar ul.nav-sidebar li.active a {
+  color: #FFFFFF;
+}
+.container .sidebar ul.nav-sidebar li.active:hover a {
+  color: #428BCA;
+}
+.container .main {
+  background: #FFFFFF;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  width: 83%;
+}
+.container .main form input.alert-danger::-webkit-input-placeholder {
+  color: #D9534F;
+}
+.container .main form input.alert-success::-webkit-input-placeholder {
+  color: #5CB85C;
+}
+.container .main form input.alert-info::-webkit-input-placeholder {
+  color: #428BCA;
+}
+.container .main form ul.initial {
+  list-style: none;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.container .main form ul.initial li.textView {
+  width: 31.3%;
+  margin-right: 3.05%;
+}
+.container .main form ul.initial li:last-child {
+  margin-right: 0;
+}
+.container .main form h4 {
+  color: #777777;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.container .main form h4 strong {
+  color: #5CB85C;
+}
+.container .main form h4.receitas {
+  margin-top: 40px;
+}
+.container .main form label.checkbox {
+  height: 34px;
+  line-height: 34px;
+  margin-right: 10px;
+}
+.container .main form label.checkbox input[type="checkbox"] {
+  float: none;
+}
+.container .main form input.checkbox {
+  margin-bottom: 10px;
+  width: 20%;
+}
+.container .main form .result {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.container .main form .result input.alerts {
+  width: 28%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}

@@ -1,2 +1,14 @@
+{% block body_ux %} home{% endblock %}
+
+{% block navbar %}
+	{% include "navbar" %}
+{% endblock %}
+
 {% block content %}
+	<div class="light_box">
+		<div class="modal">
+			<img src="../assets/image/foto.jpg" />
+		</div>
+	</div>
+    <p class="click_light">Clique aqui</p>
 {% endblock %}

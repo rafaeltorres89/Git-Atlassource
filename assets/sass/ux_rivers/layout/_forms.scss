@@ -1,0 +1,28 @@
+    /* Forms
+    ----------------------------------------------------------------------- */
+
+    //Login
+    .container
+    {
+	    .login
+	    {
+			max-width: 330px;
+			padding: 15px;
+			margin: 0 auto;
+
+			.btn-block
+			{
+				@extend #LEFT;
+				@extend #NO-MARGIN;
+				max-width: 48%;
+			}
+
+			.btn-warning,
+			.btn-info
+			{ @extend #RIGHT; }
+	    }
+
+		.form-control { margin-bottom: 10px; }
+
+		.checkbox { font-weight: 400; }
+    }

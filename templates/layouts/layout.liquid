@@ -1,23 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <!-- Title block allowing child pages to override -->
-        <title>{% block title %}Empty{% endblock %}</title>
-        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
-        <!-- Styles -->
-        {{ "app.css" | asset_url | stylesheet_tag }}
-        <!-- Style block allowing child pages to inject their own styles -->
+        {% include "metatags" %}
+        
+        <!-- Títilo - Placeholder -->
+        <title>Controle Financeiro {% block title %}{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/assets/image/favicon.ico" />
+        
+        <!-- Stylesheets -->
+        {% include "styles" %}
         {% block styles %}{% endblock %}
+
+        <!-- Javascript Header -->
+        {% block scripts_header %}{% endblock %}
     </head>
-    <body>
-        <div id="wrapper">
-            <!-- Include -->
-            {% include "header" %}
-            <!-- Content block, child page inject content -->
-            {% block content %}{% endblock %}
-        </div>
-        <!-- Script block allowing child pages to inject their own scripts -->
+    <body class="ux_rivers{% block body_ux %}{% endblock %}">
+        <!-- NavBar -->
+        {% block navbar %}
+        {% endblock %}
+
+        <!-- Content -->
+        {% block content %}{% endblock %}
+        
+        <!-- Javascript -->
+        {% include "scripts" %}
         {% block scripts %}{% endblock %}
-        {{ "app.js" | asset_url | script_tag }}
+        {% include "analytics" %}
     </body>
 </html>
