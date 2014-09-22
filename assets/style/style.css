@@ -1,0 +1,241 @@
+/*  ==========================================================================
+    STYLE: Atlassource
+    --------------------------------------------------------------------------
+    Version: 1.0;
+    ==========================================================================
+*/
+/*  --------------------------------------------------------------------------
+    SASS includes
+    ==========================================================================
+*/
+/* Variables
+----------------------------------------------------------------------- */
+/* Settings
+----------------------------------------------------------------------- */
+#ABSOLUTE, .light_box, .light_box .modal {
+  position: absolute;
+}
+
+#RELATIVE, .afi header, .navbar {
+  position: relative;
+}
+
+#FIXED {
+  position: fixed;
+}
+
+#NO-PADDING {
+  padding: 0;
+}
+
+#NO-MARGIN, .afi header, .afi header .content h1, .afi section, .afi .sidebar, .afi ul, .navbar {
+  margin: 0;
+}
+
+#MARGIN-AUTO, .afi .content {
+  margin: 0 auto;
+}
+
+#MARGIN_10 {
+  margin: 10%;
+}
+
+#LEFT, .afi header, .afi header .content h1, .afi section, .afi .sidebar, .afi ul, .afi ul li, .navbar, .light_box {
+  float: left;
+}
+
+#RIGHT, .afi header .content ul, .afi header .content ul li {
+  float: right;
+}
+
+#HIDE {
+  display: none;
+}
+
+#SHOW {
+  display: block;
+}
+
+#INDENT {
+  text-indent: -9999px;
+}
+
+/* Mixins
+----------------------------------------------------------------------- */
+/* Normalize
+----------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* Scaffolding
+----------------------------------------------------------------------- */
+.afi header {
+  width: 100%;
+  height: 80px;
+}
+.afi header .content h1 {
+  height: 30px;
+  width: 190px;
+  margin-top: 25px;
+}
+.afi header .content ul {
+  height: 20px;
+  width: 250px;
+  margin-top: 30px;
+}
+.afi header .content ul li {
+  margin-left: 20px;
+}
+.afi header .content ul li a {
+  text-decoration: none;
+}
+.afi header .content ul li a span {
+  font-weight: 500;
+}
+.afi header .content ul li:last-child {
+  margin-left: 0;
+}
+.afi .content {
+  width: 1280px;
+}
+.afi section {
+  max-width: 1280px;
+  min-width: 960px;
+}
+.afi .sidebar {
+  width: 320px;
+}
+.afi ul {
+  width: 100%;
+  list-style: none;
+}
+.afi ul li {
+  color: #777777;
+  font-family: "Roboto", arial, verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.afi ul li a {
+  color: #777777;
+  font-family: "Roboto", arial, verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.afi ul li a:hover {
+  text-decoration: none;
+}
+
+/* Grid
+----------------------------------------------------------------------- */
+#COL-16 {
+  width: 80px;
+}
+
+#COL-15 {
+  width: 160px;
+}
+
+#COL-14 {
+  width: 240px;
+}
+
+#COL-13 {
+  width: 320px;
+}
+
+#COL-12 {
+  width: 400px;
+}
+
+#COL-11 {
+  width: 480px;
+}
+
+#COL-10 {
+  width: 560px;
+}
+
+#COL-9 {
+  width: 640px;
+}
+
+#COL-8 {
+  width: 720px;
+}
+
+#COL-7 {
+  width: 800px;
+}
+
+#COL-6 {
+  width: 880px;
+}
+
+#COL-5 {
+  width: 960px;
+}
+
+#COL-4 {
+  width: 1040px;
+}
+
+#COL-3 {
+  width: 1120px;
+}
+
+#COL-2 {
+  width: 1200px;
+}
+
+#COL-1 {
+  width: 1280px;
+}
+
+/* Forms
+----------------------------------------------------------------------- */
+/* Navs
+----------------------------------------------------------------------- */
+.navbar {
+  width: 100%;
+  background: #1C5F99;
+  height: 300px;
+}
+
+/* Base
+----------------------------------------------------------------------- */
+/* Modal
+----------------------------------------------------------------------- */
+.light_box {
+  width: 100%;
+  background: #333333;
+  height: 100%;
+}
+.light_box .modal {
+  background: #FFFFFF;
+  left: 50%;
+  top: 50%;
+  margin: -130px 0 0 -180px;
+  padding: 10px;
+  z-index: 1000;
+  -webkit-box-shadow: -1px 1px 38px 6px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: -1px 1px 38px 6px rgba(0, 0, 0, 0.78);
+  box-shadow: -1px 1px 38px 6px rgba(0, 0, 0, 0.78);
+}
+.light_box .modal img {
+  max-width: 950px;
+  min-height: 250px;
+  min-width: 350px;
+}
+
+/*  -----------------------------------------------------------------------
+    Index SASS */
