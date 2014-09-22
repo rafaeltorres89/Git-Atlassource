@@ -1,0 +1,91 @@
+    /* Scaffolding
+    ----------------------------------------------------------------------- */
+
+    //Header
+    .afi
+    {
+	    header
+	    {
+			@extend #RELATIVE;
+			@extend #NO-MARGIN;
+	    	@include row;
+	    	height: 80px;
+
+	    	.content
+	    	{
+
+		    	h1
+		    	{
+		    		@extend #LEFT;
+		    		@extend #NO-MARGIN;
+		    		height: 30px;	width: 190px;
+		    		margin-top: 25px;
+		    	}
+
+		    	ul
+		    	{
+		    		@extend #RIGHT;
+		    		height: 20px;	width: 250px;
+		    		margin-top: 30px;
+
+		    		li
+		    		{
+		    			@extend #RIGHT;
+		    			margin-left: 20px;
+
+		    			a
+		    			{
+		    				text-decoration: none;
+		    				
+		    				span { font-weight: 500; }
+		    			}
+		    		}
+
+		    		li:last-child { margin-left: 0; }
+		    	}
+	    	}
+	    }
+
+	    .content
+	    {
+	    	@extend #MARGIN-AUTO;
+	    	width: 1280px;
+	    }
+
+	    section
+	    {
+	    	@extend #LEFT;
+	    	@extend #NO-MARGIN;
+	    	max-width: 1280px;
+	    	min-width: 960px;
+	    }
+
+	    .sidebar
+	    {
+	    	@extend #LEFT;
+	    	@extend #NO-MARGIN;
+	    	width: 320px;
+	    }
+
+	    ul
+	    {
+	    	@extend #LEFT;
+	    	@extend #NO-MARGIN;
+	    	@include row;
+	    	list-style: none;
+
+	    	li
+	    	{
+	    		@extend #LEFT;
+	    		@include default;
+
+	    		a
+	    		{
+	    			@include default;
+	    			text-decoration: underline;
+	    		}
+
+	    		a:hover { text-decoration: none; }
+	    	}
+	    }
+    }

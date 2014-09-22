@@ -9,6 +9,7 @@
 	#NO-PADDING 	{ padding: 0; }
 	
 	#NO-MARGIN      { margin: 0; }
+	#MARGIN-AUTO    { margin: 0 auto; }
 	#MARGIN_10 		{ margin: 10%; }
 
 	#LEFT           { float: left; }
@@ -16,3 +17,5 @@
 
 	#HIDE           { display: none; }
 	#SHOW           { display: block; }
+
+	#INDENT 		{ text-indent: -9999px; }

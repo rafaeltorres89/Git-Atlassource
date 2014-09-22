@@ -2,11 +2,19 @@
     ----------------------------------------------------------------------- */
 
 	//Navbar
-    .container
-    {
-	    .nav-pills
-	    {
-	    	@extend #RIGHT;
-			margin-top: 6px;
-	    }
-    }
+	.navbar
+	{
+		@extend #RELATIVE;
+		@extend #NO-MARGIN;
+    	@include row;
+    	background: $palette-primary;
+		height: 300px;
+
+		.content
+		{
+			ul
+			{
+
+			}			
+		}
+	}

@@ -1,0 +1,31 @@
+    /* Modal
+    ----------------------------------------------------------------------- */
+
+    //Light Box
+    .light_box
+    {
+        @extend #ABSOLUTE;
+        @include row;
+        background: $palette-dark;
+        height: 100%;
+
+        .modal
+        {
+            @extend #ABSOLUTE;
+            background: $palette-light;
+            left: 50%;  top: 50%;
+            margin: -130px 0 0 -180px;
+            padding: 10px;
+            z-index: 1000;
+            
+            -webkit-box-shadow: -1px 1px 38px 6px rgba(0,0,0,0.78);
+            -moz-box-shadow: -1px 1px 38px 6px rgba(0,0,0,0.78);
+            box-shadow: -1px 1px 38px 6px rgba(0,0,0,0.78);
+
+            img
+            {
+                max-width: 950px;
+                min-height: 250px;  min-width: 350px;
+            }
+        }
+    }
